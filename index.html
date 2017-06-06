@@ -91,39 +91,67 @@
       <section><!--Begin Game Section -->
         <div class="container"> <!-- Begin Body Container No Margin-->
           <div id="game-wheel"><!--Begin Game Wheel -->
-            <div id="game-wheel-background">
-            <span id="section1"></span>
-            <span id="section2"></span>
-            <span id="section3"></span>
-            <span id="section4"></span>
-            
-              <div id="control-wheel"></div>    
+            <span id="section1" class="color-section"></span>
+            <span id="section2" class="color-section"></span>
+            <span id="section3" class="color-section"></span>
+            <span id="section4" class="color-section"></span>
+
+            <div id="control-wheel" class="container">
+              <div class="row "><!--Count Controls -->
+                <div class="row count-controls text-center">
+                  <div class="col-md-3">
+                    <div id="count-section">
+                      <div id="count-display">00</div>
+                      <div>COUNT</div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                   <div id="start-btn-section">
+                    <button id="start-btn btn btn-default"></button>
+                    <div>START</div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div id="strict-btn-section btn btn-default">
+                    <button id="strict-btn"></button>
+                    <div>STRICT</div>
+                  </div>
+                </div>
+              </div>
+              <div class="row text-center">
+              <div class="col-md-3"></div>
+                <div class="col-md-6" id="on-off-section">
+                <button class="btn btn-default btn-primary btn-off" id="on-off-btn">OFF</button>
+                </div>
+              </div>
+
+
             </div>
-           
-          
+
+            <!-- End count controls -->
+          </div>    
+
+        </div><!--End Game Wheel-->
+      </div> <!-- End Container No Margin-->  
+    </section>
 
 
-          </div><!--End Game Wheel-->
-        </div> <!-- End Container No Margin-->  
-      </section>
-      
 
+    <footer class="text-center">
+      <a href="https://leofofeo.github.io">
+        <p>
+          A Leo Fo Feo Production
+        </p> 
+        <i class="fa fa-beer" aria-hidden="true"></i> 
+      </a>
+    </footer>
 
-      <footer class="text-center">
-        <a href="https://leofofeo.github.io">
-          <p>
-            A Leo Fo Feo Production
-          </p> 
-          <i class="fa fa-beer" aria-hidden="true"></i> 
-        </a>
-      </footer>
+    <!--jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-      <!--jQuery -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 
-      <script type="text/javascript" src="js/script.js"></script>
-
-      <!-- Bootstrap JS -->
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    </body>
-    </html>
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+  </html>

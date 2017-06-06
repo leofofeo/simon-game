@@ -18,6 +18,20 @@ header {
 	padding: 10px 20%;
 }
 
+button {
+	border-radius:50%;
+	height:30px;
+	width:30px;
+}
+
+button#start-btn {
+
+}
+
+button#strict-btn {
+
+}
+
 
 div#instructions {
 	background-color:#ecf0f1;
@@ -34,6 +48,7 @@ div#instructions h3 {
 
 div#control-wheel {
 	background: #fff!important;
+	margin: 0 auto!important;
 	width:300px;
 	height:300px;
 	z-index:100;
@@ -42,6 +57,49 @@ div#control-wheel {
 	left:110px;
 	border:20px solid black!important;
 	border-radius:50%;
+	display:flex;
+}
+
+div#count-display {
+	background: black;
+	height:30px;
+	width:45px;
+	color:red;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	font-size:1.6em;
+	border-radius:20px;
+}
+
+div#count-section {
+	display:flex;
+	flex-direction:column;
+	justify-content: center;
+}
+
+div.container{
+	margin:50px auto;
+	padding:0;
+	width:100%;
+	display:flex!important;
+	align-items: center;
+	justify-content: center;
+}
+
+div.count-controls {
+	width: 100%;
+	height:100%;
+	background: #fff;
+	border-radius:50%;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	color:black;
+	padding: 40px auto;
+	font-family: 'Roboto', sans-sarif!important;
+	font-weight:bold;
+
 }
 
 #game-wheel {
@@ -51,6 +109,21 @@ div#control-wheel {
 	border: 20px solid black;
 	position:relative;
 	border-radius:50%;
+}
+
+#on-off-section {
+	margin-top:30px;
+
+}
+
+button#on-off-btn {
+	width:100px;
+	height:50px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	font-weight:bold;
+	
 }
 
 #section1 {
@@ -89,18 +162,14 @@ div#control-wheel {
 	border-bottom-right-radius: 100%;
 }
 
-div.container{
-	margin:50px auto;
-	padding:0;
-	width:100%;
-	display:flex!important;
-	align-items: center;
-	justify-content: center;
+.btn-off {
+	font-weight:bold;
+	font-size:2em;
+	color: #fff!important;
+	background:#bdc3c7!important;
+	border:none!important; 
 }
 
-span.color-section {
-	
-}
 
 .padding {
 	margin: 50px 0;
