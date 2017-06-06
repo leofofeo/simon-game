@@ -3,17 +3,103 @@
 
 body {
 	margin: 0 auto;
-	
+	background: 
 }
 
-.container .nomargin {
-	margin:0;
+header {
+	width:100%;
+	background:#34495e;
+	height:350px;
+	color:#fff;
+	font-family: 'Montserrat', sans-sarif!important;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 20%;
+}
+
+
+div#instructions {
+	background-color:#ecf0f1;
+	padding:2% 4%;
+	border-radius:20px;
+	color:#34495e;
+	margin-top:30px!important;
+}
+
+div#instructions h3 {
+	font-weight:bold;
+	font-family: 'Montserrat', sans-sarif!important;
+}
+
+div#control-wheel {
+	background: #fff!important;
+	width:300px;
+	height:300px;
+	z-index:100;
+	position:absolute;
+	top:110px;
+	left:110px;
+	border:20px solid black!important;
+	border-radius:50%;
+}
+
+#game-wheel {
+	width:560px;
+	height:560px;
+	background: #fff;
+	border: 20px solid black;
+	position:relative;
+	border-radius:50%;
+}
+
+#section1 {
+	background: #27ae60!important;
+	width:50%;
+	height:260px;
+	display:block;
+	float:left;
+	border-top-left-radius: 100%;
+}
+
+#section2 {
+	background: #c0392b!important;
+	width:50%;
+	height:260px;
+	display:block;
+	float:right;
+	border-top-right-radius: 100%;
+}
+
+#section3 {
+	background: #f1c40f!important;
+	width:50%;
+	height:260px;
+	display:block;
+	float:left;
+	border-bottom-left-radius: 100%;
+}
+
+#section4 {
+	background: #2980b9!important;
+	width:50%;
+	height:260px;
+	display:block;
+	float:right;
+	border-bottom-right-radius: 100%;
+}
+
+div.container{
+	margin:50px auto;
 	padding:0;
 	width:100%;
+	display:flex!important;
+	align-items: center;
+	justify-content: center;
 }
 
-.content-main {
-	margin:10% auto;
+span.color-section {
+	
 }
 
 .padding {
@@ -25,6 +111,7 @@ body {
 .navbar {
 	/*background: #34495e!important;*/
 	padding:20px;
+	margin-bottom:0px!important;
 }
 
 
@@ -47,6 +134,7 @@ footer {
 	color:white;
 	height:70px;
 	width:100%!important;
+	margin-top:100px;
 }
 
 footer p {
