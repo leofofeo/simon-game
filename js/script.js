@@ -61,6 +61,7 @@ $('span').on('click', function(){
 		var clickedId = $(this).attr('id');
 		$(this).fadeIn(100).fadeOut(100).fadeIn(100);
 		if(clickedId === ActiveArray[CurrentPlayerCount]){
+			playSound(clickedId);
 			CurrentPlayerCount += 1;
 			if(CurrentPlayerCount === 20){
 				alert('You did it!');
@@ -71,6 +72,8 @@ $('span').on('click', function(){
 				runSimonSequence();
 			}
 		} else {
+			var sound = new Audio(errorSound);
+			sound.play();
 			CurrentPlayerCount = 0;
 			if(StrictModeOn){
 				ActiveArray = [];
@@ -135,6 +138,14 @@ var runSimonSequence = function(){
 		var nextColor = getRandomInt();
 		nextColor = ColorArray[nextColor];
 		ActiveArray.push(nextColor);
+		var speed;
+		if (SequenceCount > 13){
+			speed = 450;
+		} else if (SequenceCount > 7){
+			speed = 600;
+		} else {
+			speed = 800;
+		}
 		var counter = 0;
 		function animateSection(){
 			setTimeout(function(){
@@ -144,7 +155,7 @@ var runSimonSequence = function(){
 				if(counter < ActiveArray.length){
 					animateSection();
 				}	
-			}, 800);
+			}, speed);
 		}
 		animateSection();
 

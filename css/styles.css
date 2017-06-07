@@ -42,6 +42,16 @@ button#strict-btn {
  	margin-bottom: 5px;
 }
 
+button#on-off-btn {
+	width:100px;
+	height:50px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	font-weight:bold;
+	
+}
+
 
 div#instructions {
 	background-color:#ecf0f1;
@@ -113,6 +123,10 @@ div.count-controls {
 
 }
 
+span:hover {
+	cursor: pointer;
+}
+
 #game-wheel {
 	width:560px;
 	height:560px;
@@ -127,16 +141,6 @@ div.count-controls {
 
 }
 
-button#on-off-btn {
-	width:100px;
-	height:50px;
-	display:flex;
-	justify-content: center;
-	align-items: center;
-	font-weight:bold;
-	
-}
-
 #section1 {
 	background: #27ae60!important;
 	width:50%;
@@ -144,6 +148,8 @@ button#on-off-btn {
 	display:block;
 	float:left;
 	border-top-left-radius: 100%;
+	border-right: 10px solid black;
+	border-bottom: 10px solid black;
 }
 
 #section2 {
@@ -153,6 +159,8 @@ button#on-off-btn {
 	display:block;
 	float:right;
 	border-top-right-radius: 100%;
+	border-left: 10px solid black;
+	border-bottom: 10px solid black;
 }
 
 #section3 {
@@ -162,6 +170,8 @@ button#on-off-btn {
 	display:block;
 	float:left;
 	border-bottom-left-radius: 100%;
+	border-right: 10px solid black;
+	border-top: 10px solid black;
 }
 
 #section4 {
@@ -171,6 +181,8 @@ button#on-off-btn {
 	display:block;
 	float:right;
 	border-bottom-right-radius: 100%;
+	border-left: 10px solid black;
+	border-top: 10px solid black;
 }
 
 .btn-off-game {
