@@ -173,7 +173,6 @@ var resetGame = function(){
 
 var playSound = function(section){
 	var sectionNumber = section[section.length-1];
-	console.log(sectionNumber);
 	var audio;
 	switch(sectionNumber){
 		case "1":
