@@ -25,11 +25,21 @@ button {
 }
 
 button#start-btn {
-
+	-webkit-box-shadow:2px 2px;
+	-moz-box-shadow:2px 2px;
+ 	box-shadow: 2px 2px;
+ 	margin-left:5px;
+ 	border-radius:50%;
+ 	margin-bottom: 5px;
 }
 
 button#strict-btn {
-
+	-webkit-box-shadow:2px 2px;
+	-moz-box-shadow:2px 2px;
+	box-shadow: 2px 2px;
+ 	margin-left:5px;
+ 	border-radius:50%;
+ 	margin-bottom: 5px;
 }
 
 
@@ -70,6 +80,7 @@ div#count-display {
 	justify-content: center;
 	font-size:1.6em;
 	border-radius:20px;
+	margin-bottom: 5px;
 }
 
 div#count-section {
@@ -162,12 +173,20 @@ button#on-off-btn {
 	border-bottom-right-radius: 100%;
 }
 
-.btn-off {
+.btn-off-game {
 	font-weight:bold;
 	font-size:2em;
 	color: #fff!important;
 	background:#bdc3c7!important;
 	border:none!important; 
+}
+
+.btn-start-on {
+	background: #27ae60!important;
+}
+
+.btn-strict-on {
+	background: #f1c40f!important;
 }
 
 
