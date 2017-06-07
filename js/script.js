@@ -14,6 +14,12 @@ var CurrentPlayerCount = 0;
 var GettingPlayerInput = false;
 var PlayerRightSoFar = false;
 
+var sound1 = "https://s3.amazonaws.com/freecodecamp/simonSound1.mp3";
+var sound2 = "https://s3.amazonaws.com/freecodecamp/simonSound2.mp3";
+var sound3 ="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3";
+var sound4 ="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3";
+var errorSound = './js/no.mp3';
+
 
 $('#on-off-btn').on('click', function(){
 	if($(this).hasClass('btn-off-game')){
@@ -56,7 +62,7 @@ $('span').on('click', function(){
 		$(this).fadeIn(100).fadeOut(100).fadeIn(100);
 		if(clickedId === ActiveArray[CurrentPlayerCount]){
 			CurrentPlayerCount += 1;
-			if(CurrentPlayerCount === 3){
+			if(CurrentPlayerCount === 20){
 				alert('You did it!');
 				deactivateGame();
 			}
@@ -132,6 +138,7 @@ var runSimonSequence = function(){
 		var counter = 0;
 		function animateSection(){
 			setTimeout(function(){
+				playSound(ActiveArray[counter]);
 				$('#' + ActiveArray[counter]).fadeIn(300).fadeOut(300).fadeIn(300);
 				counter++;
 				if(counter < ActiveArray.length){
@@ -161,4 +168,29 @@ var resetGame = function(){
 	ActiveArray = [];
 	CurrentPlayerCount = 0;
 	GettingPlayerInput = false;
+}
+
+
+var playSound = function(section){
+	var sectionNumber = section[section.length-1];
+	console.log(sectionNumber);
+	var audio;
+	switch(sectionNumber){
+		case "1":
+			audio = new Audio(sound1);
+			break;
+		case "2":
+			audio = new Audio(sound2);
+			break;
+		case "3":
+			audio = new Audio(sound3);
+			break;
+		case "4":
+			audio = new Audio(sound4);
+			break;
+		default:
+			audio = new Audio(sound1);
+			break;
+	}
+	audio.play();
 }
